@@ -1,0 +1,28 @@
+/* Centralização e Limpeza */
+.hero-container {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Micro-interação no Botão */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff; /* Azul profissional */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* O botão "sobe" levemente */
+}
