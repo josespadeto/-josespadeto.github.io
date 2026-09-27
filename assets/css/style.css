@@ -1,19 +1,23 @@
-/* Reset básico para tirar margens padrão */
+/* =========================================
+   RESET E BASE
+   ========================================= */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #f9f9f9; /* Fundo cinza bem claro, elegante */
+  background-color: #f9f9f9;
   color: #333;
 }
 
-/* Container principal centralizado */
+/* =========================================
+   HERO SECTION (CARTÃO DE VISITA)
+   ========================================= */
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Ocupa a altura total da tela */
+  height: 100vh;
   text-align: center;
   padding: 0 20px;
 }
@@ -31,21 +35,88 @@ p {
   margin-bottom: 30px;
 }
 
-/* Botão com micro-interação */
+/* Botão Principal com Micro-interação */
 .btn {
   display: inline-block;
   padding: 15px 35px;
-  background-color: #2563eb; /* Azul profissional */
+  background-color: #2563eb;
   color: white !important;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: all 0.3s ease; /* Suavidade na transição */
+  transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
   background-color: #1d4ed8;
-  transform: translateY(-3px); /* Sobe levemente */
+  transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   SEÇÃO DE PROJETOS (PORTFÓLIO)
+   ========================================= */
+.projects-section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+}
+
+/* Grid Responsivo Automático */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card de Projeto Elegante */
+.project-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #2563eb;
+  font-size: 1.4rem;
+}
+
+.project-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Botão Secundário dos Cards */
+.btn-small {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f4ff;
+  color: #2563eb !important;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.btn-small:hover {
+  background-color: #2563eb;
+  color: white !important;
 }
