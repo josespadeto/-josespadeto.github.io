@@ -1,28 +1,51 @@
-/* Centralização e Limpeza */
+/* Reset básico para tirar margens padrão */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9; /* Fundo cinza bem claro, elegante */
+  color: #333;
+}
+
+/* Container principal centralizado */
 .hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa a altura total da tela */
   text-align: center;
-  padding: 100px 20px;
-  font-family: 'Helvetica Neue', sans-serif;
+  padding: 0 20px;
 }
 
 h1 {
-  font-size: 3rem;
-  color: #333;
+  font-size: 3.5rem;
   margin-bottom: 10px;
+  color: #1a1a1a;
+  letter-spacing: -1px;
 }
 
-/* Micro-interação no Botão */
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Botão com micro-interação */
 .btn {
   display: inline-block;
-  padding: 15px 30px;
-  background-color: #007bff; /* Azul profissional */
-  color: white;
+  padding: 15px 35px;
+  background-color: #2563eb; /* Azul profissional */
+  color: white !important;
   text-decoration: none;
-  border-radius: 5px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Suavidade na transição */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px); /* O botão "sobe" levemente */
+  background-color: #1d4ed8;
+  transform: translateY(-3px); /* Sobe levemente */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
