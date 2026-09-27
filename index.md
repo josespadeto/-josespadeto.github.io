@@ -18,21 +18,21 @@ title: Dr. José Spadeto
     <!-- Projeto 1 -->
     <article class="project-card">
       <h3>Portal Contando e Cantando</h3>
-      <p>Desenvolvimento e otimização de portal musical focado em performance e SEO.</p>
+      <p>Desenvolvimento e otimização de portal musical focado em performance, SEO e monetização via AdSense.</p>
       <a href="#" class="btn-small">Ver Detalhes</a>
     </article>
 
     <!-- Projeto 2 -->
     <article class="project-card">
       <h3>JRS Prospector</h3>
-      <p>Landing page para prospecção de clientes web com foco em conversão.</p>
+      <p>Landing page estratégica para prospecção de clientes web, validada com dados reais de mercado.</p>
       <a href="#" class="btn-small">Ver Detalhes</a>
     </article>
     
     <!-- Projeto 3 -->
     <article class="project-card">
       <h3>Guia Médico Digital</h3>
-      <p>Site institucional leve para autoridade médica e agendamentos.</p>
+      <p>Site institucional leve e acessível para autoridade médica, focado em E-E-A-T e agendamentos.</p>
       <a href="#" class="btn-small">Ver Detalhes</a>
     </article>
   </div>
