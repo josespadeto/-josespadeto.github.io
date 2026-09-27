@@ -1,8 +1,28 @@
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800, /* Duração da animação em milissegundos */
-    once: true     /* Anima apenas uma vez ao rolar */
-  });
-</script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    
+    <!-- Link para o seu CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Biblioteca de Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Aqui é onde o conteúdo do seu index.md vai aparecer -->
+    {{ content }}
+
+    <!-- Scripts da Animação AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+</body>
+</html>
